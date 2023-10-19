@@ -1,0 +1,102 @@
+$tabletSize: 720px;
+$Fontstyle: Arial;
+
+html {
+    @media only screen and (min-width: $tabletSize) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+body {
+
+    @media only screen and (min-width: $tabletSize) {
+        max-width: 1300px;
+    }
+
+    font-family: $Fontstyle;
+}
+
+.nav-links {
+    @media only screen and (min-width: $tabletSize) {
+        font-size: small;
+        gap: 2em;
+    }
+}
+
+#news {
+    @media only screen and (min-width: $tabletSize) {
+        height: 50vh;
+    }
+}
+
+.carousel__item {
+    @media only screen and (min-width: $tabletSize) {
+        height: 42vh;
+        padding: 0%;
+    }
+}
+
+#event {
+    @media only screen and (min-width: $tabletSize) {
+        height: 70vh;
+    }
+}
+
+#event p {
+    @media only screen and (min-width: $tabletSize) {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.grid {
+    @media only screen and (min-width: $tabletSize) {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+.grid-item img {
+    @media only screen and (min-width: $tabletSize) {
+        margin-left: 8%;
+        height: 260px;
+        width: 380px;
+    }
+}
+
+.sortiment {
+    @media only screen and (min-width: $tabletSize) {
+        height: 76vh;
+        padding-bottom: 2%;
+    }
+
+}
+
+.grid-2 {
+    @media only screen and (min-width: $tabletSize) {
+        grid-template-columns: auto auto auto auto auto auto auto;
+        align-self: center;
+        row-gap: 20px;
+    }
+
+}
+
+.grid-item-2 {
+    @media only screen and (min-width: $tabletSize) {
+        padding-top: 0%;
+
+    }
+}
+
+.grid-item-2 img {
+    @media only screen and (min-width: $tabletSize) {}
+}
+
+.footer {
+    @media only screen and (min-width: $tabletSize) {
+        font-size: small;
+        padding: 5%;
+    }
+
+
+}

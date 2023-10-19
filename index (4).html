@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale-1.0" />
+  <title>Köp böcker och var inte missa våra stora bokevenemang! | Pärmar&Poesi</title>
+  <meta proterty="og:title" content="Köp böcker och inte missa våra stora bokevenemang! | Pärmar&Poesi">
+  <meta name="description" content="Upptäck och köp dina nya böcker, gå med på våra bokevenemang.">
+  <meta property="og:description" content="Upptäck och köp dina nya böcker, gå med på våra bokevenemang.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pärmar&Poesi">
+  <meta property="og:url" content="https://www.parmarpoesi.com/">
+  <meta property="og:image" content="">
+  <meta name="keywords"
+    content="böcker, köpa böcker, bokhandel, book event, bokevenemang, litterära evenemang, book club, bokklubb, boknyheter, nya böcker, populära böcker, parmarpoesi.com">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="app.css" />
+  <script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+      window.onclick = function (event) {
+        if (event.target !== popup && !popup.contains(event.target)) {
+          popup.style.display = "block";
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header>
+    <img class="header" src="ParmarPoesi_Bookstore_Logo.png" />
+  </header>
+  <nav>
+    <ul class="nav_links">
+      <li><a href="#">Nyheter</a></li>
+      <li><a href="#">Sortiment</a></li>
+      <li><a href="#">Event</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="popup" class="popup" onclick="myFunction()">💞
+      <!-- <i class="fa-regular fa-heart"></i> -->
+      <span class="popuptext" id="myPopup">
+        <h1>Wishlist</h1>
+        <p>Bli medlem i vår kundklubb för att
+          få tillgång till din wishlist. Du får
+          även tillgång till vårat veckobrev med
+          info om nytt sortiment och våra event.
+        </p>
+        <form action="action_page.php">
+          <div class="container">
+            <input type="text" placeholder="Namn" name="name" required>
+            <input type="text" placeholder="Email" name="mail" required>
+          </div>
+          <div class="container">
+            <input type="submit" value="Skicka in">
+          </div>
+        </form>
+      </span>
+    </div>
+    <section class="news">
+      <h2>Ny böcker hos oss</h2>
+      <article class="book-gallery">
+        <div class="row">
+          <img src="bok1.jpg" alt="">
+          <img src="bok1.jpg" alt="">
+          <img src="bok2.jpg" alt="">
+          <img src="bok3.jpg" alt="">
+        </div>
+        <div class="row">
+          <img src="bok4.jpg" alt="">
+          <img src="bok5.jpg" alt="">
+          <img src="bok6.jpg" alt="">
+          <img src="bok7.jpg" alt="">
+        </div>
+      </article>
+    </section>
+    <section class="event">
+      <h2>Välkommen till Pärmar & Poesis Litterära Afton!</h2>
+
+      <p>Slå dig ner i bekväma fåtöljer bland väggarna täckta av bokhyllor fyllda med skatter från litteraturens värld.
+        Pärmar & Poesi är stolta över att bjuda in dig till en oförglömlig kväll med ordets konst och berättelsernas
+        magi.</p>
+      <p>Vi är otroligt glada att välkomna en av litteraturens mest betydelsefulla författare, Fjodor Dostojewski, till
+        vår bokaffär Pärmar & Poesi. Det här är en sällsynt chans att fördjupa dig i Dostojewskis mästerliga verk och
+        utforska hans tankar om mänsklig natur och moral.</p>
+      <ul>
+        <li>Författarsamtal</li>
+        <li>Poesiuppläsning</li>
+        <li>Signeringssession</li>
+        <li>Litterär atmosfär</li>
+        <li>Specialerbjudanden</li>
+      </ul>
+      <img src="https://cdni.rbth.com/rbthmedia/images/2021.03/original/6062e4de15e9f93fe32c2d57.jpg"
+        alt="Fjodor Dostojewski" class="w-16 h-16">
+
+    </section>
+    <footer class="footer">
+      <p>
+        Pärmar & Poesi (TM) Bokgatan 21, 67234 Malmö Tel: +460987230947 Mail:
+        Parmar.poesi@gmail.com
+      </p>
+    </footer>
+
+    ---nya popup---
+    <section>
+      <button class="heart">💞</button>
+      <span class="overlay"></span>
+
+      <div class="heart-box">
+        <h1>Wishlist</h1>
+        <p>Bli medlem i vår kundklubb för att
+          få tillgång till din wishlist. Du får
+          även tillgång till vårat veckobrev med
+          info om nytt sortiment och våra event.
+        </p>
+        <form action="action_page.php">
+          <div class="container">
+            <input type="text" placeholder="Namn" name="name" required>
+            <input type="text" placeholder="Email" name="mail" required>
+          </div>
+
+          <div class="button">
+            <button class="close-btn">Skicka in</button>
+          </div>
+      </div>
+    </section>
+
+    <script>
+      const section = document.querySelector('section'),
+        overlay = document.querySelector('.overlay'),
+        heartBtn = document.querySelector('.heart'),
+        closeBtn = document.querySelector('.close-btn');
+
+      heartBtn.addEventListener('click', () => section.classList.add("active"));
+      closeBtn.addEventListener('click', () => section.classList.remove("active"));
+      overlay.addEventListener('click', () => section.classList.remove("active"));
+    </script>
+  </main>
+</body>
+
+</html>

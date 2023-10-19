@@ -1,0 +1,35 @@
+body {
+  font-family: Helvetica;
+}
+
+@media only screen and (min-width: 720px) {
+  body {
+    margin-left: 15%;
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #news {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .carousel__item {
+    height: 44vh;
+    padding: 0%;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #event {
+    height: 90vh;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .footer {
+    padding: 2em;
+  }
+}
