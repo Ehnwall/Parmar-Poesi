@@ -17,13 +17,6 @@ body {
     font-family: $Fontstyle;
 }
 
-.nav-links {
-    @media only screen and (min-width: $tabletSize) {
-        font-size: small;
-        gap: 2em;
-    }
-}
-
 #news {
     @media only screen and (min-width: $tabletSize) {
         height: 50vh;
@@ -36,6 +29,7 @@ body {
         padding: 0%;
     }
 }
+
 
 #event {
     @media only screen and (min-width: $tabletSize) {
@@ -67,7 +61,7 @@ body {
 .sortiment {
     @media only screen and (min-width: $tabletSize) {
         height: 76vh;
-        padding-bottom: 2%;
+        padding-bottom: 3%;
     }
 
 }

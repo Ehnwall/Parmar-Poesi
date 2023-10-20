@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width initial-scale-1.0" />
     <title>Pärmar & Poesi</title>
     <link rel="icon" href="https://fav.farm/📚" />
-    <meta property="og:title" content="Köp böcker och inte missa våra stora bokevenemang! | Pärmar&Poesi">
-    <meta name="description" content="Upptäck och köp dina nya böcker, gå med på våra bokevenemang.">
-    <meta property="og:description" content="Upptäck och köp dina nya böcker, gå med på våra bokevenemang.">
+    <meta property="og:title" content="Köp böcker | Missa inte säsongens book event! | Pärmar & Poesi">
+    <meta name="description" content="Upptäck vårt stora sortiment av böcker, gå med på säsongens största book event.">
+    <meta property="og:description"
+        content="Upptäck vårt stora sortiment av böcker, gå med på säsongens största book event.">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Pärmar&Poesi">
+    <meta property="og:site_name" content="Pärmar & Poesi">
     <meta property="og:url" content="https://www.parmarpoesi.com/">
-    <meta property="og:image" content="">
+    <meta property="og:image"
+        content="https://ehnwall.github.io/Parmar-Poesi/images/ParmarPoesi_Bookstore_Logo__Rod.png">
     <meta name="keywords"
         content="böcker, köpa böcker, bokhandel, book event, bokevenemang, litterära evenemang, book club, bokklubb, boknyheter, nya böcker, populära böcker, parmarpoesi.com">
     <meta name="robots" content="index, follow">
 
-
     <link rel="stylesheet" href="appTEST.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +30,11 @@
         <img src="images/ParmarPoesi_Bookstore_Logo__Rod.png" alt="Pärmar och Poesi">
     </header>
     <nav>
-
+        <div class="hamburger">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+        </div>
         <ul class="nav-links">
             <li><a href="#news">HOME</a></li>
             <li>|</li>
@@ -40,26 +46,49 @@
         </ul>
     </nav>
     <main>
-        <section id="news" class="bg-red-700">
+        <section class="bg-red-700" id="news">
+
             <article class="carousel">
                 <article class="carousel__item">
-                    <a href="https://www2.hm.com/sv_se/productpage.1200974001.html">
+                    <a href="">
                         <img alt="Hunger games" src="images/hgdone.jpg">
                     </a>
                 </article>
-                <article class="carousel__item"><a href="https://www2.hm.com/sv_se/productpage.1200974001.html"><img
-                            alt="Harry Potter" src="images/hpdone(1).jpg"></a></article>
-                <article class="carousel__item"><a href="https://www2.hm.com/sv_se/productpage.1200974001.html"><img
-                            alt="Jan Guillou" src="images/jannedone.jpeg"></a></article>
-                <article class="carousel__item"><a href="https://www2.hm.com/sv_se/productpage.1200974001.html"><img
-                            alt="Sagan om ringen" src="images/Sagan_Om_Ringen.jpeg"></a></article>
+                <article class="carousel__item"><a href=""><img alt="Harry Potter" src="images/hpdone(1).jpg"></a>
+                </article>
+                <article class="carousel__item"><a href=""><img alt="Jan Guillou" src="images/jannedone.jpeg"></a>
+                </article>
+                <article class="carousel__item"><a href=""><img alt="Sagan om ringen"
+                            src="images/Sagan_Om_Ringen.jpeg"></a></article>
             </article>
         </section>
 
         <section id="event">
+            <section>
+                <button id="showPopupBtn">Klicka här för att skriva upp dig till vårt nyhetsbrev!</button>
+                <div id="popupOverlay" class="popup-overlay hidden">
+                    <div class="popup-content">
+                        <h2>Sign up</h2>
+                        <p>
+                            Skicka in dina uppgifter nedan för att ta del av
+                            specialerbjudanden, nyheter och event i vårt nyhetsbrev.
+                        </p>
+                        <form action="action_page.php">
+                            <div>
+                                <input type="text" placeholder="Name" name="name" required>
+                                <input type="email" placeholder="Email" name="mail" required>
+                            </div>
+                            <button class="submit" type="submit">Submit</button>
+                        </form>
+                        <button id="closePopupBtn" class="close-btn">Close</button>
+                    </div>
+                </div>
+            </section>
             <h1>Kommande Event</h1>
-            <p>Slå dig ner i bekväma fåtöljer bland väggarna täckta av bokhyllor fyllda med skatter från litteraturens
-                värld. Hos oss anordnas bokcirikar, författarsamtal, läsecirklar och mycket annat spännande! Välkomna
+            <p>Slå dig ner i bekväma fåtöljer bland väggarna täckta av bokhyllor fyllda med skatter från
+                litteraturens
+                värld. Hos oss anordnas bokcirikar, författarsamtal, läsecirklar och mycket annat spännande!
+                Välkomna
                 till oss för att avnjuta oförglömliga stunder med ordets konst och berättelsernas magi.
             </p>
             <div class="grid">
@@ -166,29 +195,8 @@
                 </div>
             </div>
         </section>
-        <script src="main.js"></script>
 
     </main>
-    <!-- <button id="showPopupBtn">Show Popup</button>
-
-    <div id="popupOverlay" class="popup-overlay hidden">
-        <div class="popup-content">
-            <h2>Wishlist</h2>
-            <p>
-                Become a member to access your wishlist. You'll also receive our weekly newsletter with new products and
-                events.
-            </p>
-            <form action="action_page.php">
-                <div>
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email" name="mail" required>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-            <button id="closePopupBtn" class="close-btn">Close</button>
-        </div>
-    </div> -->
-
     <footer class="footer" id="contact">
         <p>
             PÄRMAR & POESI (TM) | BOKGATAN 21 67234 MALMÖ | TEL: +46729015420 | MAIL:

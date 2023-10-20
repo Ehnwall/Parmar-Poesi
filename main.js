@@ -33,11 +33,20 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     buttons[0].classList.add("carousel__button--selected");
 });
 
-// document.getElementById('showPopupBtn').addEventListener('click', function () {
-//     document.getElementById('popupOverlay').classList.remove('hidden');
-// });
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-// document.getElementById('closePopupBtn').addEventListener('click', function () {
-//     document.getElementById('popupOverlay').classList.add('hidden');
-// });
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+
+document.getElementById('showPopupBtn').addEventListener('click', function () {
+    document.getElementById('popupOverlay').classList.remove('hidden');
+});
+
+document.getElementById('closePopupBtn').addEventListener('click', function () {
+    document.getElementById('popupOverlay').classList.add('hidden');
+});
+
+
 
